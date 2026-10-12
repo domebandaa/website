@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with Domenica Banda! Reach out via email or connect on social media platforms like Instagram and LinkedIn.">
+    <title>Domenica Banda</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="resume.html">Resume</a></li>
+                    <li> <a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <section id="contact-header" class="contact-banner">
+            <div class="contact-header">
+                <h1>Contact Me</h1>
+                <p>Have questions, suggestions, or business inquiries? I'd love to hear from you!</p>
+            </div>
+        </section>
+
+        <section id="contact-form-section" class="contact-container">
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <p>Please fill out the form below, and I'll get back to you as soon as possible.</p>
+                <form id="contact-form" >
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="location-section" class="location-info">
+            <div class="location-details">
+                <h2>Location</h2>
+                <p><strong>Address:</strong> Vancouver, Canada</p>
+                <p><strong>Email:</strong> <a class="link" href="mailto:domenica.banda.alvarez@gmail.com">domenica.banda.alvarez@gmail.com</a></p>
+                <p><strong>Phone:</strong> +1 (555) 555-5555</p>
+            </div>
+            <br>
+            <div class="map-container">
+                <h2>Find Me</h2>
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.692607451225!2d-123.12140368431237!3d49.28272997933069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867179e4c2b5f5%3A0x12b8f12cf70f65bd!2sVancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1234567890"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p> &copy; 2024 Domenica Banda.</p>
+    </footer>
+    <script>
+        /*Form Validation*/
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            if (!this.checkValidity()) {
+                alert("Please fill out all fields correctly before submitting.");
+                event.preventDefault();
+            }
+        });
+        /*Dropdown Menu*/
+        let menuToggle = document.getElementById("menu-toggle");
+        let navLinks = document.querySelector(".nav-links");
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+        /*Logo*/
+        let logo = document.querySelector('.logo');
+        menuToggle.addEventListener('click', () => {
+            logo.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

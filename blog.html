@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Follow Domenica Banda's blog to gain insights, tips, and inspiration on topics she inspiration passionate about, including personal growth and creativity.">
+    <title>Domenica Banda</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="resume.html">Resume</a></li>
+                    <li> <a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <section id="blog-hero">
+                <div class="blog-header">
+                    <h1>Blog</h1>
+                    <p>Dive into my thoughts, experiences, and inspirations.</p>
+                </div>
+            </section>
+
+            <div id="blog-posts">
+                <article class="blog-post">
+                    <h2>5 Reasons Why Nature Inspires Creativity</h2>
+                    <p>Discover how the beauty of nature boosts mental clarity and sparks creativity...</p><br>
+                    <a class="link" href="blog1.html">Read More</a>
+                </article>
+                <br>
+                <article class="blog-post">
+                    <h2>How to Make the Perfect Cup of Coffee</h2>
+                    <p>A detailed guide to brewing the best coffee at home...</p><br>
+                    <a class="link" href="post2.html">Read More</a>
+                </article>
+            </div>
+        </div>
+        <section class="portfolio-contact">
+            <h2>Want to know more?</h2>
+            <p>Let's share our thoughts!</p>
+            <a href="contact.html" class="contact-button">Contact Me</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p> &copy; 2024 Domenica Banda.</p>
+    </footer>
+
+    <script>
+       /*Dropdown Menu*/
+       let menuToggle = document.getElementById("menu-toggle");
+        let navLinks = document.querySelector(".nav-links");
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+        /*Logo*/
+        let logo = document.querySelector('.logo');
+        menuToggle.addEventListener('click', () => {
+            logo.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

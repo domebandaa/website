@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Domenica Banda's portfolio showcasing recent projects and creative work. See how I bring ideas to life through innovation and passion.">
+    <title>Domenica Banda - Portfolio</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="resume.html">Resume</a></li>
+                    <li> <a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="portfolio-content">
+        <section class="portfolio-hero">
+            <div class="portfolio-header">
+                <h1>My Portfolio</h1>
+                <p>Welcome to my portfolio showcasing my best work and projects.</p>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/coffee1.jpg" alt="Project 1">
+                </div>
+                <div class="project-details">
+                    <h3>Falling Stars</h3>
+                    <p>JavaScript based interactive game.</p>
+                    <a href="falling stars/FallingStars.html" class="project-link">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/planning.jpg" alt="Project 2">
+                </div>
+                <div class="project-details">
+                    <h3>Emoot Campaign</h3>
+                    <p>Digital Marketing Campaign created for a start-up.</p>
+                    <a href="https://emoot.io/" class="project-link">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/coffee2.jpg" alt="Project 3">
+                </div>
+                <div class="project-details">
+                    <h3>Bio Website </h3>
+                    <p>Used HTML an CSS to develop a website.</p>
+                    <a href="index.html" class="project-link">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-project">
+            <div class="featured-image">
+                <img src="images/castle.jpg " alt="Featured Project">
+            </div>
+            <div class="featured-details">
+                <h2>Barista Certification</h2>
+                <p>+144 hours hands-on espresso machine techniques.</p>
+                <a href="https://www.casecuador.com/barismo-profesional/" class="featured-link">Learn More</a>
+            </div>
+        </section>
+
+        <section class="portfolio-contact">
+            <h2>Let's Work Together</h2>
+            <p>Interested in collaborating? Get in touch!</p>
+            <a href="contact.html" class="contact-button">Contact Me</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Domenica Banda.</p>
+    </footer>
+    <script>
+        /*Dropdown Menu*/
+        let menuToggle = document.getElementById("menu-toggle");
+        let navLinks = document.querySelector(".nav-links");
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+        /*Logo*/
+        let logo = document.querySelector('.logo');
+        menuToggle.addEventListener('click', () => {
+            logo.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

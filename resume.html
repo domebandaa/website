@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover Domenica Banda's professional journey, skills, education, and experience.">
+    <meta name="author" content="Domenica Banda">
+    <meta name="keywords" content="Domenica Banda, Resume, Portfolio, Web Developer, Barista, Customer Service">
+    <title>Domenica Banda - Resume</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="resume.html">Resume</a></li>
+                    <li> <a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="resume-hero">
+            <div class="resume-header">
+                <h1>Resume</h1>
+                <p>Discover my professional journey and accomplishments.</p>
+            </div>
+        </section>
+
+        <section class="work-experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>Position:</strong> Customer Service Assistant<br>
+                    <strong>Company:</strong> Byllibon Detalles<br>
+                    <strong>Duration:</strong> March 2022 - September 2023<br>
+                    <p>Managed multiple concurrent customer orders while maintaining quality standards. Improved
+                        customer satisfaction by ensuring timely delivery and excellent communication.</p>
+                </li>
+                <li>
+                    <strong>Position:</strong> Barista<br>
+                    <strong>Company:</strong> Koffie<br>
+                    <strong>Duration:</strong> November 2024 - Present<br>
+                    <p>Mastered commercial espresso equipment operation and delivered exceptional service to create a
+                        welcoming cafe experience for customers.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Fluent in English and Spanish; Conversational French.</li>
+                <li><strong>Technology:</strong> Proficient in Microsoft Office Suite and Google Workspace.</li>
+                <li><strong>Soft Skills:</strong> Time Management, Adaptability, and Quick Learning.</li>
+                <li><strong>Communication:</strong> Strong interpersonal and active listening skills.</li>
+            </ul>
+        </section>
+
+        <section class="download-resume">
+            <h2>Download Resume</h2>
+            <p>Download my resume to learn more about my professional journey and qualifications.</p>
+            <a href="Domenica_Banda_Resume_2024.pdf" download class="download-button">Download Resume</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Domenica Banda.</p>
+    </footer>
+    <script>
+       /*Dropdown Menu*/
+       let menuToggle = document.getElementById("menu-toggle");
+        let navLinks = document.querySelector(".nav-links");
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+        /*Logo*/
+        let logo = document.querySelector('.logo');
+        menuToggle.addEventListener('click', () => {
+            logo.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="View a collection of Domenica Banda's media highlights, including videos, images, and other creative content.">
+    <title>Domenica Banda</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="resume.html">Resume</a></li>
+                    <li> <a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <section id="media-hero">
+                <div class="media-header">
+                    <h1>Photos & Videos</h1>
+                    <p>Explore my visual journey through images, videos, and creative projects..</p>
+                </div>
+            </section>
+            <section class="text">
+                <h2>Professional Gallery</h2>
+                <div id="gallery">
+                    <ul>
+                        <li><a href="images/coffee.jpg"><img src="images/coffee_thumb.png" alt="Coffee" height="100"
+                                    width="100">
+                                <span><img src="images/coffee.jpg" height="200" width="250"
+                                        alt="Coffee"><br>Coffee</span></a>
+                        </li>
+                        <li><a href="images/coding.jpg"><img src="images/coding_thumb.png" alt="Coding" height="100"
+                                    width="100">
+                                <span><img src="images/coding.jpg" height="200" width="250"
+                                        alt="Coding"><br>Coding</span></a>
+                        </li>
+                        <li><a href="images/computer.jpg"><img src="images/computer_thumb.png" alt="computer"
+                                    height="100" width="100">
+                                <span><img src="images/computer.jpg" height="200" width="250"
+                                        alt="computer"><br>computer</span></a>
+                        </li>
+                        <li><a href="images/phone.jpg"><img src="images/phone_thumb.png" alt="phone" height="100"
+                                    width="100">
+                                <span><img src="images/phone.jpg" height="200" width="250" alt="phone"><br>phone
+                                </span></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Email: <a class="link"
+                        href="mailto:domenica.banda.alvarez@gmail.com">domenica.banda.alvarez@gmail.com</a></p>
+                <p>Social Media:
+                    <a class="link" href="#">Instagram</a>,
+                    <a class="link" href="#">LinkedIn</a>
+                </p>
+                <a href="contact.html" class="contact-button">Contact Me!</a>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Domenica Banda</p>
+    </footer>
+    <script>
+        /*Dropdown Menu*/
+        let menuToggle = document.getElementById("menu-toggle");
+        let navLinks = document.querySelector(".nav-links");
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+        /*Logo*/
+        let logo = document.querySelector('.logo');
+        menuToggle.addEventListener('click', () => {
+            logo.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
