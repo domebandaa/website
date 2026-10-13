@@ -196,6 +196,8 @@ a:focus {
 .text,
 .testimonials,
 .work-experience,
+.education,
+.professional-summary,
 .skills,
 .download-resume,
 .gallery,
@@ -221,6 +223,8 @@ a:focus {
 .text:hover,
 .testimonials:hover,
 .work-experience:hover,
+.education:hover,
+.professional-summary:hover,
 .skills:hover,
 .download-resume:hover,
 .gallery:hover,
@@ -528,25 +532,25 @@ summary {
 /*Resume Section*/
 .work-experience h2,
 .skills h2,
-.download-resume h2 {
+.download-resume h2, .professional-summary h2, .education h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333333;
 }
 
 .work-experience ul,
-.skills ul {
+.skills ul, .education ul {
     list-style: none;
     padding: 0;
 }
 
 .work-experience li,
-.skills li {
+.skills li, .education li {
     margin-bottom: 15px;
 }
 
 .work-experience li strong,
-.skills li strong {
+.skills li strong, .education li strong {
     color: #725946;
 }
 
